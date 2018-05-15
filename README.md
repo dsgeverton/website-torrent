@@ -1,6 +1,3 @@
-Website em construção...
+Website (WIP)...
 
-Desenvolvedores:
-+-------------------------------------+
-| Christiam Alves e Everton Gonçalves |
-+-------------------------------------+
+Developers: Christiam Alves e Everton Gonçalves
