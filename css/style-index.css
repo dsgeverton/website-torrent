@@ -1,0 +1,371 @@
+*{margin: 0px;padding: 0px;}
+
+header{
+  color: rgb(255, 255, 255);
+  background-color: #653797;
+}
+
+#logo{
+  margin-left: auto;
+  margin-right: auto;
+  width: 260px;
+  }
+
+#logo-header{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 1px 1px 30px -3px black;
+}
+
+#logado{}
+
+.logoBar{
+  width: 100%;
+  display: block;
+  background: rgba(24,42,45,.59);
+  text-align: center;
+  overflow: auto;
+}
+
+.logoBar .navbar-1{
+  list-style-type: none;
+  display: inline-flex;
+  font-size: 0;
+  padding: 15px;
+  float: right;
+}
+
+.navbar-login a{
+  width: 70px;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: #00D0CB;
+  border: 1px solid #fff;
+  transition: all .1s ease-in-out;
+  text-decoration: none;
+  color: #fff;
+}
+.navbar-login a:hover{
+  background: rgb(14, 112, 119);
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-cadastrar a{
+  padding: 5px;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 1px solid #FFF;
+  border-left: 0;
+  transition: all .1s ease-in-out;
+  text-decoration: none;
+  color: #fff;
+}
+.navbar-cadastrar a:hover{
+  background: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* MENU PRINCIPAL */
+.menu{
+  text-align: center;
+  display: block;
+  float: left;
+}
+.menu-list{
+  list-style-type: none;
+  padding: 8px;
+}
+.menu-list-item{
+  text-decoration: none;
+  list-style: none;
+  display: inline;
+  padding: 10px;
+}
+
+.item-anchor-menu{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 20pt;
+  text-shadow: 1px 1px 20px black;
+}
+
+.item-anchor-menu:hover{
+  color: rgba(218, 218, 218, 0.3);
+  text-decoration: none;
+  font-size: 20pt;
+  text-shadow: 1px 1px 20px black;
+}
+
+
+/* CORPO DO SITE */
+body{
+  background: url('../img/city.jpg') center center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.corpo-principal{
+  clear: both;
+}
+
+section .torrents{
+  margin-top: 20px;
+  background-color: rgba(28, 28, 28, .87);
+  min-height: 500px;
+}
+
+.flutuar-lateral{
+  width: 30%;
+  float: right;
+}
+
+.flutuar-lateral .info-lateral{
+  border-radius: 3px;
+  position: relative;
+  background-color: rgb(237, 235, 247);
+  padding: 15px;
+  margin: 15px;
+}
+
+.flutuar-lateral .info-lateral ul{
+  list-style-type: none;
+}
+.flutuar-lateral .info-lateral p{
+  text-align: center;
+
+}
+.flutuar-lateral .info-lateral #frame-video{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border: 0px;
+}
+
+.pesquisa{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+table{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+#lupa-icon{
+  padding: 0.26rem;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(129, 129, 129);
+  /* border: 5px solid rgb(42, 42, 42); */
+}
+
+.title{
+  text-shadow: 1px 3px 8px black;
+  font-size: 20pt;
+  color: rgba(250,250,250,.8);
+  margin-bottom: 0.3em;
+}
+
+.sBar{
+  font-size: 20pt;
+  width: 800px;
+  height: 90px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  border-radius: 7px;
+  overflow: hidden;
+  border: 5px solid rgba(35, 0, 47, 0.63);
+  background: rgba(0,0,0,.1);
+}
+
+#input-pesquisar{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+  border: none;
+  font-size: 24px;
+  font-weight: 100;
+  color: #262e2f;
+  padding-left: 30px;
+  padding-right: 120px;
+  border-radius: 5px;
+}
+
+.botao{
+  margin-top: 5px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 100px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  opacity: .7;
+  margin-right: 5px;
+  /* transition: all .2s ease-in-out; */
+}
+.botao img{
+  max-width: 32px;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+
+
+#user-cadastros{
+  background-color: rgb(0, 177, 71);
+  color: white;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+}
+
+#user-cadastros-fail{
+  text-decoration: none;
+}
+
+/* ÁREA DE POSTAGENS */
+
+.busca-categoria{
+  background-color: rgba(26, 21, 43, 0.94);
+  color: white
+}
+
+.categoria-lista{
+
+}
+
+.categoria{
+  margin: 0px;
+  margin-right: 5px;
+}
+
+.categoria-selected{
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(0, 177, 71);
+  margin-bottom: 10px;
+}
+
+.post-torrent{
+  margin-top: 15px;
+  width: 65%;
+  display: block;
+  margin-left: 50px;
+  min-height: 200px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.post-torrent .post{
+  border-radius: 3px;
+  color: white;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  background-color: rgba(35, 0, 47, 1);
+  overflow: auto;
+  position: relative;
+  display: block;
+}
+
+.post-torrent .post .post-fig{
+  margin: 0px;
+}
+
+.post-torrent .post .post-img{
+  padding: 0px;
+  width: 15%;
+  min-width: 64px;
+  float: left;
+  margin: 10px;
+}
+.post-torrent .post .conteudo{
+  padding: 10px;
+}
+
+.post-torrent .post .conteudo a{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.post-torrent .post .post-table{
+  /* border: 1px solid white; */
+  padding: 15px;
+  display: table-cell;
+  right: 10em;
+  margin: 10px;
+}
+
+.post-torrent .post .post-table .post-table-row th{
+  padding-right: 5px;
+  border-right: 1px solid white;
+}
+.post-torrent .post .post-table .post-table-row td{
+    text-align: left;
+    border: 1px solid white;
+}
+
+.post-torrent .post .post-table .post-table-row-download td{
+  padding-top: 10px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.post-torrent .post .post-table .post-table-row-download th{
+  padding-top: 10px;
+  border-right: 1px solid white;
+}
+/* RODAPÉ */
+footer{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  clear: both;
+  background-color: rgb(0, 177, 71);
+  padding: 50px;
+  overflow: auto;
+}
+
+footer .contato{
+  border-radius: 3px;
+  background-color: rgba(28, 28, 28, .87);
+  /* width: 20%; */
+  float: left;
+}
+
+footer .info{
+  border-radius: 3px;
+  width: 100%;
+  clear: both;
+  float: left;
+}
+
+footer .anuncio{
+  border-radius: 3px;
+  background-color: rgba(28, 28, 28, .87);
+  width: 20%;
+  float:right;
+
+}

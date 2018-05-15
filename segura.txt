@@ -1,0 +1,39 @@
+if ($categoria_post) {
+  echo "<div class='categoria-selected'>
+  ". strtoupper($categoria_post) ."
+  </div>";
+  $consulta = "SELECT torrent.nome, torrent.descricao, torrent.link_img, torrent.link_server FROM torrent INNER JOIN categoria ON torrent.id_categoria = categoria.id WHERE categoria.nome = '$categoria_post'";
+  $resultado = mysqli_query($link, $consulta) or die("erro na consulta");
+  if (mysqli_num_rows($resultado)) {
+    while ($row = mysqli_fetch_assoc($resultado)) {
+      echo "<article class='post'>
+              <figure id='post-fig'>
+                <img class='post-img' src='". $row['link_img'] ."' alt=''>
+              </figure>
+              <div class=''>
+                <table class='post-table'>
+                  <tr class='post-table-row'>
+                    <th> Nome </th>
+                    <td> <span class='conteudo'>". $row['nome'] ."</span> </td>
+                  </tr>
+                  <tr class='post-table-row'>
+                    <th> Descrição </th>
+                    <td> <span class='conteudo'>". $row['descricao'] ."</span> </td>
+                  </tr>
+                  <tr class='post-table-row'>
+                    <th> Baixar </th>";
+                      if (verificarSessao()) {
+                        echo "<td> <a id='user-cadastros' href='". $row['link_server'] ."'> Download </a> </td>";
+                      } else{
+                        echo "<td> <a id='user-cadastros-fail' href='login.html' > Faça o login para baixar </a> </td>";
+                      }
+      echo "      </tr>
+                </table>
+              </div>
+            </article>";
+    }
+  }
+  else {
+    echo "<p>Nenhum resultado encontrado!</p>";
+  }
+}

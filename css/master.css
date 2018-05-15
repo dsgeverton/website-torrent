@@ -1,0 +1,155 @@
+body{
+  background-color: #1C1C1C;
+  color: white;
+}
+
+.titulo {
+  margin-top: 10%;
+  text-align: center;
+  text-shadow: 1px 2px BLACK;
+}
+
+.bloc {
+  text-align: center;
+  text-shadow: 1px 2px BLACK;
+}
+
+.container {
+  border: 10px solid #653797;
+  border-radius: 5px;
+  align-items:center;
+  margin: 3% auto;
+  width: 25%;
+  min-width: 200px;
+  background-color: #653797;
+}
+
+.alerta{
+  margin-top: 15px;
+  margin-bottom: -15px;
+  color: red;
+  text-shadow: 1px 1px BLACK;
+  text-align: center;
+}
+
+form{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label{
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+form div{
+  margin-top: 1em;
+}
+
+.campo{
+  margin-left: -3%;
+  width: 200px;
+  height: 30px;
+}
+
+.form-input{
+  text-align: center;
+  /* margin-left: 11rem; */
+}
+
+#validacao-fail{
+  color: red;
+  text-align: center;
+}
+
+#validacao-ok{
+  color: rgb(6, 209, 73);
+  text-align: center;
+}
+
+.infos{
+  text-align: center;
+}
+.infos-link1{
+  background-color: rgb(112, 11, 125);
+  padding: 5px;
+  border-radius: 2px;
+}
+.infos-link2{
+  background-color: rgb(112, 11, 125);
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.link{
+  padding-left: 7.7em;
+  padding-right: 7.7em;
+  color: white;
+  font-size: 12pt;
+  margin-right: 0px;
+  text-decoration: none;
+}
+
+.link2{
+  padding-left: 5em;
+  padding-right: 5em;
+  color: white;
+  font-size: 12pt;
+  margin-right: 0px;
+  text-decoration: none;
+}
+
+.link:hover{
+  color: white;
+  font-size: 12pt;
+  margin-right: 0px;
+  border-bottom: 2px solid rgba(255,255,255);
+}
+
+.link2:hover{
+  color: white;
+  font-size: 12pt;
+  margin-right: 0px;
+  border-bottom: 2px solid rgba(255,255,255);
+}
+
+#btn-login{
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;
+}
+
+#btn-login:hover{
+  cursor: pointer;
+}
+
+#btn-login:active{
+  top: 2px;
+}
+
+#voltar-link{
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #653797;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+#voltar-link:hover{
+  color: #653797;
+  transition-duration: 0.3s;
+  background-color: rgba(255, 255, 255, 1);
+  padding-left: 11em;
+  padding-right: 11em;
+}
+
+.voltar{
+  /* margin-top: -50px; */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
